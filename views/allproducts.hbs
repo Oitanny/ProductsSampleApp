@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In Form</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo">YourCart</a>
+        <nav class="nav-items">
+            <a href="/homepage">Home</a>
+            <a href="/add">Add Products</a>
+            <a href="/showproducts">Show Products</a>
+        </nav>
+    </header>
+    <main>
+        <div class="featured">
+            <h2>All Products</h2>
+            <div style="display:flex;gap: 50px 100px; width:100%;  flex-wrap: wrap;  ">
+
+                {{#each data}}
+                <div style="background-color: #3898ec; margin: 50px; padding:40px; border-radius: 10px;">
+                    <h3 style="color:black">Name: {{Name}}</h3><br>
+                    <p style="color:black">Price: {{Price}}</p><br>
+                    <p style="color:black">Company: {{Company}}</p><br />
+                    <p style="color:black">Rating: {{Rating}}</p><br />
+                </div>
+
+                {{/each}}
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="copy">&copy; 2023 Manpreet</div>
+        <div class="bottom-links">
+            <div class="links">
+                <span>More Info</span>
+                <a href="/homepage">Home</a>
+                <a href="/add">Add Products</a>
+                <a href="/showproducts">Show All Products</a>
+            </div>
+            <div class="links">
+                <span>Social Links</span>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

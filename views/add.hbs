@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In Form</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo">YourCart</a>
+        <nav class="nav-items">
+            <a href="/homepage">Home</a>
+            <a href="/add">Add Products</a>
+            <a href="/showproducts">Show Products</a>
+        </nav>
+    </header>
+    <main>
+        <div class="wrapper login">
+            <div class="container">
+                <div style="padding: 60px;">
+                    <div class="login-form" style="margin: 70;">
+                        <h2>Add Product</h2>
+                        <form action="/addproduct" method="post">
+                            <p> <label>ProductID<span>*</span></label> <input type="text" placeholder="Enter Unique Id"
+                                    name="ProductID" required> </p>
+                            <p> <label>Name<span>*</span></label> <input type="text" placeholder="Enter Name"
+                                    name="Name" required> </p>
+                            <p> <label>Price<span>*</span></label> <input type="number" placeholder="Enter Price"
+                                    name="Price" required> </p>
+                            <p> <label>Featured<span>*</span></label> <input type="text"
+                                    placeholder="Enter true if featured, else false" name="Featured" required</p>
+                            <p> <label>Rating<span>*</span></label> <input type="text" placeholder="Enter Rating"
+                                    name="Rating" required> </p>
+                            <p> <label>Company<span>*</span></label> <input type="text" placeholder="Enter Company Name"
+                                    name="Company" required> </p>
+
+
+                            <a href="/homepage">
+                                <p> <input type="submit" value="Add Product"> </p>
+                            </a>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="copy">&copy; 2023 Manpreet</div>
+        <div class="bottom-links">
+            <div class="links">
+                <span>More Info</span>
+                <a href="/homepage">Home</a>
+                <a href="/add">Add Products</a>
+                <a href="/showproducts">Show All Products</a>
+            </div>
+            <div class="links">
+                <span>Social Links</span>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
